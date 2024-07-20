@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projtailor.measureExp.MexpController">
+   <children>
+      <Line endX="593.0" layoutX="101.0" layoutY="31.0" startX="-100.0" />
+      <Label layoutX="257.0" layoutY="38.0" text="Measurement Explorer ">
+         <font>
+            <Font name="Calibri Light" size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combostat" editable="true" layoutX="62.0" layoutY="100.0" prefHeight="25.0" prefWidth="129.0" />
+      <ComboBox fx:id="comboworker" editable="true" layoutX="288.0" layoutY="100.0" onAction="#getrecords" prefHeight="25.0" prefWidth="117.0" promptText="select worker" />
+      <TextField fx:id="txtmob" layoutX="500.0" layoutY="100.0" onAction="#getcont" prefHeight="25.0" prefWidth="139.0" promptText="enter Cust's Contact" />
+      <Label layoutX="62.0" layoutY="74.0" prefHeight="26.0" prefWidth="41.0" text="Status">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="74.0" prefHeight="26.0" prefWidth="49.0" text="Worker">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="74.0" prefHeight="26.0" prefWidth="147.0" text="All customer's orders ">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="56.0" layoutY="136.0" prefHeight="239.0" prefWidth="591.0" />
+      <Button layoutX="208.0" layoutY="387.0" mnemonicParsing="false" onAction="#showalll" prefHeight="27.0" prefWidth="97.0" text="Show All">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="415.0" layoutY="388.0" mnemonicParsing="false" onAction="#export" text="Export To Excel ">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

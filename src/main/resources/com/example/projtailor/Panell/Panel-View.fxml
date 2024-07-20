@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="441.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projtailor.DeliveryPanel.PanelController">
+   <children>
+      <Line endX="536.0" endY="3.814697265625E-6" layoutX="108.0" layoutY="32.0" startX="-100.0" />
+      <Label layoutX="238.0" layoutY="44.0" text="Order Delivery Panel">
+         <font>
+            <Font name="Calibri Light" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmob" layoutX="193.0" layoutY="97.0" prefHeight="25.0" prefWidth="223.0" promptText="enter Cust's Contact" />
+      <Button layoutX="475.0" layoutY="96.0" mnemonicParsing="false" onAction="#dofind" text="Find Orders">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="67.0" layoutY="101.0" text="Mobile Number">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lststat" editable="true" layoutX="83.0" layoutY="153.0" prefHeight="171.0" prefWidth="85.0" />
+      <ListView fx:id="lstorder" layoutX="203.0" layoutY="153.0" prefHeight="171.0" prefWidth="76.0" />
+      <ListView fx:id="lstbill" layoutX="313.0" layoutY="153.0" prefHeight="171.0" prefWidth="76.0" />
+      <ListView fx:id="lstdress" layoutX="434.0" layoutY="153.0" prefHeight="171.0" prefWidth="121.0" />
+      <Label layoutX="76.0" layoutY="373.0" prefHeight="1.0" prefWidth="49.0" text="Total Bill">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbill" layoutX="153.0" layoutY="369.0" />
+      <Button layoutX="434.0" layoutY="368.0" mnemonicParsing="false" onAction="#dodeliver" text="Delivered All">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="101.0" layoutY="135.0" text="Status">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="135.0" text="Bill">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="135.0" text="Order Id">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="135.0" text="Dress">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

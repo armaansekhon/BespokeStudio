@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="434.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projtailor.tabworker.TabWorker">
+   <children>
+      <Line endX="422.0" layoutX="214.0" layoutY="32.0" startX="-214.0" startY="-3.814697265625E-6" />
+      <Label layoutX="246.0" layoutY="41.0" text="Worker Data">
+         <font>
+            <Font name="Calibri Light" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="388.0" layoutY="91.0" mnemonicParsing="false" onAction="#getrecords" prefHeight="29.0" prefWidth="191.0" text="Get Records">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboworker" editable="true" layoutX="124.0" layoutY="93.0" onAction="#getrec" prefHeight="25.0" prefWidth="201.0" promptText="Select Worker Here" />
+      <Label layoutX="63.0" layoutY="97.0" text="Worker">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="54.0" layoutY="141.0" prefHeight="234.0" prefWidth="547.0" />
+   </children>
+</AnchorPane>
